@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import java.util.List;
 
 @FeignClient(name = "fipe", url = "https://parallelum.com.br/fipe/api/v1/carros/marcas")
-public interface Prices {
+public interface PriceService {
 
     @GetMapping()
     List<ReturnObj> getBrands();
